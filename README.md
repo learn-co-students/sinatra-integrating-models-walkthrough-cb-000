@@ -15,7 +15,7 @@ In previous lessons, we've applied logic to data provided by the user directly i
 
 We'll use input from a form to create an instance of a model, and then send that instance back to a view to be displayed to the user. As an example, we're going to create a web application that analyzes a block of text from the user - showing the number of words, most common letters, and least common letters to us.
 
-To code along, fork and clone this lab. Run `bundle install` to make sure all of your dependencies are installed. 
+To code along, fork and clone this lab. Run `bundle install` to make sure all of your dependencies are installed.
 
 ### Starter Code
 Let's take a closer look at the starter code. Run `shotgun` to make sure that your application can run.
@@ -100,7 +100,7 @@ end
 ```
 We can shorten this to:
 
-```
+```ruby 
 post '/' do
   @analyzed_text = TextAnalyzer.new(params[:user_text])
   erb :results
