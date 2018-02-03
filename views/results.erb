@@ -1,9 +1,9 @@
 <h1>Your Text Analysis</h1>
 
-<h2>Number of Words: </h2>
+<h2>Number of Words: <%= @counts[0] %></h2>
 
-<h2>Vowels: </h2>
+<h2>Vowels: <%= counts[1] %></h2>
 
-<h2>Consonants: </h2>
+<h2>Consonants: <%= counts[2] %></h2>
 
-<h2>Most Common Letter: _____ used _____ times</h2>
+<h2>Most Common Letter: <%= @winner[0] %> used <%= @winner[1] %> times</h2>
