@@ -9,6 +9,9 @@ class App < Sinatra::Base
   post '/' do
     @analyzed_text = TextAnalyzer.new(params[:user_text])
 
+    @letter = @analyzed_text.most_used_letter.map{|k,v| k}.join
+    @times_used = @analyzed_text.most_used_letter.map{|k,v| v}.join
+
     erb :results
   end
 end
